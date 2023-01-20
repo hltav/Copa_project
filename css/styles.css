@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+body {
+    background: #E0E0E0;
+
+}
+
+.container {
+    width: 100vw;
+    position: relative;
+}
+
+.ball01 {
+    position: absolute;
+    width: 19%;
+
+}
+
+.official-logo {
+    width: 28%;
+    position: absolute;
+    margin-top: 3%;
+    margin-left: 4%;
+
+}
+
+.soccer {
+    width: 100%;
+    position: absolute;
+    margin-top: 7%;
+}
+
+.background-image {
+    width: 100vw;
+
+}
+
+.content {
+    width: auto;
+
+}
+
+.contagem-regressiva {
+    font-weight: 900;
+    font-size: 200%;
+    color: #9C092F;
+    position: absolute;
+    margin-top: 53.5%;
+    margin-left: 3%;
+
+}
+
+.acompanhar {
+    position: absolute;
+    margin-left: 71%;
+    width: 19%;
+    background: #9C092F;
+    border-radius: 2em;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 148%;
+    border: none;
+    margin-top: 46%;
+    padding: 17px;
+    z-index: 1;
+}
+
+.ball02 {
+    width: 19%;
+    position: absolute;
+    margin-left: 81%;
+    margin-top: 43%;
+    z-index: 0;
+}
+
+@media(max-width: 900px) {
+
+    .official-logo {
+        margin-left: 23%;
+        width: 52%;
+        margin-top: 27%;
+
+    }
+
+    .soccer {
+        margin-top: 82%;
+
+    }
+
+    .contagem-regressiva {
+        margin-top: 144%;
+        font-size: 182%;
+        width: 64%;
+        text-align: center;
+        margin-left: 18%;
+
+    }
+
+    .acompanhar {
+        margin-top: 179%;
+        margin-left: 33%;
+        width: 38%;
+        font-size: 106%
+    }
+
+    .ball02 {
+        margin-top: 206%;
+
+    }
+
+}

@@ -1,0 +1,1791 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/jogos.css">
+    <script   src="./js/script.js" defer></script>
+    <script  src="./js/userContext.js"></script>
+    
+    
+
+    <title>Jogos</title>
+</head>
+
+<body>
+    <main class="content">
+        <div class="lstorage-resp">
+            <button onclick="addScore(event)" id="save-resp" value="input">Salvar Placares</button>
+            <button onclick="loadScore(event); loadFlags(event)" id="load-resp" value="input">Carregar Placares</button>
+        </div>
+        <img src="./images/Copa_do_mundo_2022.svg" alt="Logo Catar" id="copa-mundo">
+        <section class="abcd">
+            <section class="all-groups">
+
+                <div class="grupo">
+                    <p class="j-2">GRUPO A</p>
+                    <div class="container">
+
+                        <p class="j-1">20/11 13:00hrs <br> Al Bayt Stadium</p>
+
+                        <div class="placar">
+                            <div class="time">
+                                <img src="./images/icon-qatar.svg" alt="Qatar" class="home-a" />
+                                <p class="j-1">QAT</p>
+                            </div>
+
+                            <div class="allScore">
+                                <input type="number" id="score101" name="" class='score j-place'  style='text-align:center' min="0" />
+                                <input type="number" id="score102" name="" class='score j-place'  style='text-align:center' min="0" />
+                            </div>
+
+                            <div class="time">
+                                <img src="./images/icon-ecuador.svg" alt="Equador" class="home-a" />
+                                <p class="j-1">EQU</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="container">
+
+                        <p class="j-1">21/11 13:00hrs <br> Al Thumama</p>
+
+                        <div class="placar">
+                            <div class="time">
+                                <img src="./images/icon-senegal.svg" alt="Senegal" class="home-a" />
+                                <p class="j-1">SEN</p>
+                            </div>
+
+                            <div class="allScore">
+                                <input type="number" id="score103" name="" class='score j-place' style='text-align:center' min="0" />
+                                <input type="number" id="score104" name="" class='score j-place' style='text-align:center' min="0" />
+                            </div>
+
+                            <div class="time">
+                                <img src="./images/icon-netherlands.svg" alt="Holanda" class="home-a" />
+                                <p class="j-1">HOL</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="container">
+
+                        <p class="j-1">25/11 10:00hrs <br>Al Thumama</p>
+
+                        <div class="placar">
+                            <div class="time">
+                                <img src="./images/icon-qatar.svg" alt="Qatar" class="home-a" />
+                                <p class="j-1">QAT</p>
+                            </div>
+
+                            <div class="allScore">
+                                <input type="number" id="score5" name="" class='score' style='text-align:center' min="0" />
+                                <input type="number" id="score6" name="" class='score' style='text-align:center' min="0" />
+                            </div>
+
+                            <div class="time">
+                                <img src="./images/icon-senegal.svg" alt="Qatar" class="home-a" />
+                                <p class="j-1">SEN</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="container">
+
+                        <p class="j-1">25/11 10:00hrs <br> Khalifa Stadium</p>
+
+                        <div class="placar">
+                            <div class="time">
+                                <img src="./images/icon-netherlands.svg" alt="Holanda" class="home-a" />
+                                <p class="j-1">HOL</p>
+                            </div>
+
+                            <div class="allScore">
+                                <input type="number" id="score9" name="" class='score' style='text-align:center' min="0" />
+                                <input type="number" id="score10" name="" class='score' style='text-align:center' min="0" />
+                            </div>
+
+                            <div class="time">
+                                <img src="./images/icon-ecuador.svg" alt="Equador" class="home-a" />
+                                <p class="j-1">EQU</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="container">
+
+                        <p class="j-1">29/11 12:00hrs <br> Al Bayt Stadium </p>
+
+                        <div class="placar">
+                            <div class="time">
+                                <img src="./images/icon-netherlands.svg" alt="Holanda" class="home-a" />
+                                <p class="j-1">HOL</p>
+                            </div>
+
+                            <div class="allScore">
+                                <input type="number" id="score11" name="" class='score' style='text-align:end' min="0" />
+                                <input type="number" id="score12" name="" class='score' style='text-align:end' min="0" />
+                            </div>
+
+                            <div class="time">
+                                <img src="./images/icon-qatar.svg" alt="Qatar" class="home-a" />
+                                <p class="j-1">QAT</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="container">
+
+                        <p class="j-1">25/11 10:00hrs <br> Khalifa Stadium</p>
+
+                        <div class="placar">
+                            <div class="time">
+                                <img src="./images/icon-ecuador.svg" alt="Equador" class="home-a" />
+                                <p class="j-1">EQU</p>
+                            </div>
+
+                            <div class="allScore">
+                                <input type="number" id="score13" name="" class='score' style='text-align:end' min="0" />
+                                <input type="number" id="score14" name="" class='score' style='text-align:end' min="0" />
+                            </div>
+
+                            <div class="time">
+                                <img src="./images/icon-senegal.svg" alt="Senegal" class="home-a" />
+                                <p class="j-1">SEN</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="grupo">
+                    <p class="j-2">GRUPO B</p>
+                    <div class="container">
+
+                        <p class="j-1">21/11 10:00hrs <br> Khalifa Stadium</p>
+
+                        <div class="placar">
+                            <div class="time">
+                                <img src="./images/icon-england.svg" alt="Inglaterra" class="home-a" />
+                                <p class="j-1">ING</p>
+                            </div>
+
+                            <div class="allScore">
+                                <input type="number" id="score105" name="score1" class='score j-place' style='text-align:center' min="0" />
+                                <input type="number" id="score106" name="score2" class='score j-place' style='text-align:center' min="0" />
+                            </div>
+
+                            <div class="time">
+                                <img src="./images/icon-iran.svg" alt="Irã" class="home-a" />
+                                <p class="j-1">IRA</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="container">
+
+                        <p class="j-1">21/11 16:00hrs <br> Ahmad bin Ali</p>
+
+                        <div class="placar">
+                            <div class="time">
+                                <img src="./images/icon-united-states.svg" alt="Estados Unidos" class="home-a" />
+                                <p class="j-1">EUA</p>
+                            </div>
+
+                            <div class="allScore">
+                                <input type="number" id="score107" name="" class='score j-place' style='text-align:center' min="0" value="" />
+                                <input type="number" id="score108" name="" class='score j-place' style='text-align:center' min="0" value="" />
+                            </div>
+
+                            <div class="time">
+                                <img src="./images/icon-wales.svg" alt="País de Gales" class="home-a" />
+                                <p class="j-1">GAL</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="container">
+
+                        <p class="j-1">25/11 07:00hrs <br> Ahmad bin Ali</p>
+
+                        <div class="placar">
+                            <div class="time">
+                                <img src="./images/icon-wales.svg" alt="País de Gales" class="home-a" />
+                                <p class="j-1">GAL</p>
+                            </div>
+
+                            <div class="allScore">
+                                <input type="number" id="score7" name="" class='score' style='text-align:center' min="0" />
+                                <input type="number" id="score8" name="" class='score' style='text-align:center' min="0" />
+                            </div>
+
+                            <div class="time">
+                                <img src="./images/icon-iran.svg" alt="Irã" class="home-a" />
+                                <p class="j-1">IRA</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="container">
+
+                        <p class="j-1">25/11 16:00hrs <br> Al Bayt Stadium</p>
+
+                        <div class="placar">
+                            <div class="time">
+                                <img src="./images/icon-england.svg" alt="Inglaterra" class="home-a" />
+                                <p class="j-1">ING</p>
+                            </div>
+
+                            <div class="allScore">
+                                <input type="number" id="score15" name="" class='score' style='text-align:center' min="0" />
+                                <input type="number" id="score16" name="" class='score' style='text-align:center' min="0" />
+                            </div>
+
+                            <div class="time">
+                                <img src="./images/icon-united-states.svg" alt="Estados Unidos" class="home-a" />
+                                <p class="j-1">EUA</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="container">
+
+                        <p class="j-1">29/11 16:00hrs <br> Al Thumama</p>
+
+                        <div class="placar">
+                            <div class="time">
+                                <img src="./images/icon-iran.svg" alt="Irã" class="home-a" />
+                                <p class="j-1">IRA</p>
+                            </div>
+
+                            <div class="allScore">
+                                <input type="number" id="score17" name="" class='score' style='text-align:center' min="0" />
+                                <input type="number" id="score18" name="" class='score' style='text-align:center' min="0" />
+                            </div>
+
+                            <div class="time">
+                                <img src="./images/icon-united-states.svg" alt="Estados Unidos" class="home-a" />
+                                <p class="j-1">EUA</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="container">
+
+                        <p class="j-1">29/11 16:00hrs <br> Ahmad bin Ali</p>
+
+                        <div class="placar">
+                            <div class="time">
+                                <img src="./images/icon-wales.svg" alt="País de Gales" class="home-a" />
+                                <p class="j-1">GAL</p>
+                            </div>
+
+                            <div class="allScore">
+                                <input type="number" id="score19" name="" class='score' style='text-align:center' min="0" />
+                                <input type="number" id="score20" name="" class='score' style='text-align:center' min="0" />
+                            </div>
+
+                            <div class="time">
+                                <img src="./images/icon-england.svg" alt="Inglaterra" class="home-a" />
+                                <p class="j-1">ING</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="all-groups">
+
+                <div class="grupo">
+                    <p class="j-2">GRUPO C</p>
+                    <div class="container">
+
+                        <p class="j-1">22/11 07:00hrs <br> Lusail Stadium</p>
+
+                        <div class="placar">
+                            <div class="time">
+                                <img src="./images/icon-argentina.svg" alt="Argentina" class="home-a" />
+                                <p class="j-1">ARG</p>
+                            </div>
+
+                            <div class="allScore">
+                                <input type="number" id="score109" name="" class='score j-place' style='text-align:center' min="0" />
+                                <input type="number" id="score110" name="" class='score j-place' style='text-align:center' min="0" />
+                            </div>
+
+                            <div class="time">
+                                <img src="./images/icon-saudi-arabia.svg" alt="Arábia Saudita" class="home-a" />
+                                <p class="j-1">ARA</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="container">
+
+                        <p class="j-1">22/11 13:00hrs <br> Stadium 974</p>
+
+                        <div class="placar">
+                            <div class="time">
+                                <img src="./images/icon-mexico.svg" alt="México" class="home-a" />
+                                <p class="j-1">MEX</p>
+                            </div>
+
+                            <div class="allScore">
+                                <input type="number" id="score111" name="" class='score j-place' style='text-align:center' min="0" />
+                                <input type="number" id="score112" name="" class='score j-place' style='text-align:center' min="0" />
+                            </div>
+
+                            <div class="time">
+                                <img src="./images/icon-poland.svg" alt="Polônia" class="home-a" />
+                                <p class="j-1">POL</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="container">
+
+                        <p class="j-1">26/11 10:00hrs <br> Education City </p>
+
+                        <div class="placar">
+                            <div class="time">
+                                <img src="./images/icon-poland.svg" alt="Polônia" class="home-a" />
+                                <p class="j-1">POL</p>
+                            </div>
+
+                            <div class="allScore">
+                                <input type="number" id="score21" name="" class='score' style='text-align:center' min="0" />
+                                <input type="number" id="score22" name="" class='score' style='text-align:center' min="0" />
+                            </div>
+
+                            <div class="time">
+                                <img src="./images/icon-saudi-arabia.svg" alt="Arábia Saudita" class="home-a" />
+                                <p class="j-1">ARA</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="container">
+
+                        <p class="j-1">26/11 16:00hrs <br> Lusail Stadium</p>
+
+                        <div class="placar">
+                            <div class="time">
+                                <img src="./images/icon-argentina.svg" alt="Argentina" class="home-a" />
+                                <p class="j-1">ARG</p>
+                            </div>
+
+                            <div class="allScore">
+                                <input type="number" id="score23" name="" class='score' style='text-align:center' min="0" />
+                                <input type="number" id="score24" name="" class='score' style='text-align:center' min="0" />
+                            </div>
+
+                            <div class="time">
+                                <img src="./images/icon-mexico.svg" alt="México" class="home-a" />
+                                <p class="j-1">MEX</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="container">
+
+                        <p class="j-1">30/11 16:00hrs <br> Stadium 974</p>
+
+                        <div class="placar">
+                            <div class="time">
+                                <img src="./images/icon-poland.svg" alt="Polônia" class="home-a" />
+                                <p class="j-1">POL</p>
+                            </div>
+
+                            <div class="allScore">
+                                <input type="number" id="score25" name="" class='score' style='text-align:center' min="0" />
+                                <input type="number" id="score26" name="" class='score' style='text-align:center' min="0" />
+                            </div>
+
+                            <div class="time">
+                                <img src="./images/icon-argentina.svg" alt="Argentina" class="home-a" />
+                                <p class="j-1">ARG</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="container">
+
+                        <p class="j-1">30/11 16:00hrs <br> Lusail Stadium</p>
+
+                        <div class="placar">
+                            <div class="time">
+                                <img src="./images/icon-saudi-arabia.svg" alt="Arábia Saudita" class="home-a" />
+                                <p class="j-1">ARA</p>
+                            </div>
+
+                            <div class="allScore">
+                                <input type="number" id="score27" name="" class='score' style='text-align:center' min="0" />
+                                <input type="number" id="score28" name="" class='score' style='text-align:center' min="0" />
+                            </div>
+
+                            <div class="time">
+                                <img src="./images/icon-mexico.svg" alt="México" class="home-a" />
+                                <p class="j-1">MEX</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="grupo">
+                    <p class="j-2">GRUPO D</p>
+                    <div class="container">
+
+                        <p class="j-1">22/11 10:00hrs <br>Education City</p>
+
+                        <div class="placar">
+                            <div class="time">
+                                <img src="./images/icon-denmark.svg" alt="Dinamarca" class="home-a" />
+                                <p class="j-1">DIN</p>
+                            </div>
+
+                            <div class="allScore">
+                                <input type="number" id="score117" name="" class='score j-place' style='text-align:center' min="0" />
+                                <input type="number" id="score118" name="" class='score j-place' style='text-align:center' min="0" />
+                            </div>
+
+                            <div class="time">
+                                <img src="./images/icon-tunisia.svg" alt="Tunisia" class="home-a" />
+                                <p class="j-1">TUN</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="container">
+
+                        <p class="j-1">22/11 16:00hrs <br> Al Janoub</p>
+
+                        <div class="placar">
+                            <div class="time">
+                                <img src="./images/icon-france.svg" alt="França" class="home-a" />
+                                <p class="j-1">FRA</p>
+                            </div>
+
+                            <div class="allScore">
+                                <input type="number" id="score119" name="" class='score j-place' style='text-align:center' min="0" />
+                                <input type="number" id="score120" name="" class='score j-place' style='text-align:center' min="0" />
+
+                            </div>
+
+                            <div class="time">
+                                <img src="./images/icon-australia.svg" alt="Austrália" class="home-a" />
+                                <p class="j-1">AUS</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="container">
+
+                        <p class="j-1">26/11 07:00hrs <br>Al Janoub</p>
+
+                        <div class="placar">
+                            <div class="time">
+                                <img src="./images/icon-tunisia.svg" alt="Tunisia" class="home-a" />
+                                <p class="j-1">TUN</p>
+                            </div>
+
+                            <div class="allScore">
+                                <input type="number" id="score29" name="" class='score' style='text-align:center' min="0" />
+                                <input type="number" id="score30" name="" class='score' style='text-align:center' min="0" />
+                            </div>
+
+                            <div class="time">
+                                <img src="./images/icon-australia.svg" alt="Austrália" class="home-a" />
+                                <p class="j-1">AUS</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="container">
+
+                        <p class="j-1">26/11 13:00hrs <br> Stadium 974</p>
+
+                        <div class="placar">
+                            <div class="time">
+                                <img src="./images/icon-france.svg" alt="França" class="home-a" />
+                                <p class="j-1">FRA</p>
+                            </div>
+
+                            <div class="allScore">
+                                <input type="number" id="score31" name="" class='score' style='text-align:center' min="0" />
+                                <input type="number" id="score32" name="" class='score' style='text-align:center' min="0" />
+                            </div>
+
+                            <div class="time">
+                                <img src="./images/icon-denmark.svg" alt="Dinamarca" class="home-a" />
+                                <p class="j-1">DIN</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="container">
+
+                        <p class="j-1">30/11 10:00hrs <br>Education City</p>
+
+                        <div class="placar">
+                            <div class="time">
+                                <img src="./images/icon-tunisia.svg" alt="Tunisia" class="home-a" />
+                                <p class="j-1">TUN</p>
+                            </div>
+
+                            <div class="allScore">
+                                <input type="number" id="score33" name="" class='score' style='text-align:center' min="0" />
+                                <input type="number" id="score34"name="" class='score' style='text-align:center' min="0" />
+                            </div>
+
+                            <div class="time">
+                                <img src="./images/icon-france.svg" alt="França" class="home-a" />
+                                <p class="j-1">FRA</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="container">
+
+                        <p class="j-1">30/11 12:00hrs <br>Al Janoub</p>
+
+                        <div class="placar">
+                            <div class="time">
+                                <img src="./images/icon-australia.svg" alt="Austrália" class="home-a" />
+                                <p class="j-1">AUS</p>
+                            </div>
+
+                            <div class="allScore">
+                                <input type="number" id="score35" name="" class='score' style='text-align:center' min="0" />
+                                <input type="number" id="score36" name="" class='score' style='text-align:center' min="0" />
+                            </div>
+
+                            <div class="time">
+                                <img src="./images/icon-denmark.svg" alt="Dinamarca" class="home-a" />
+                                <p class="j-1">DIN</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <div class="resp">
+            <div class="lstorage">
+                
+            </div>
+            <section class="mata-mata">
+                <div class="fase-final">
+                    <p class="j-3">OITAVAS DE FINAL</p>
+                    <div class="oitavas">
+                        <div class="eliminacao">
+                            <div class="confrontos">
+                                <div class="container">
+
+                                    <p class="j-1">03/12 12hrs - O1<br> Khalifa Stadium</p>
+
+                                    <div class="placar">
+                                        <div class="time">
+
+                                            <img src="./images/classificados.svg" alt="1° do Grupo A" class="home-a" 
+                                            id="home"/>
+                                           
+                                            <select name="" onchange="changeFlags(event)" id="oh" class="classificados">
+                                                <option  value="EQU">EQU</option>
+                                                <option  value="HOL">HOL</option>
+                                                <option  value="QAT">QAT</option>
+                                                <option  value="SEN">SEN</option>
+                                                <option selected >1° A</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="allScore">
+                                            <input type="number" id="score69" name="" class='score' style='text-align:center' min="0" />
+                                            <input type="number" id="score70" name="" class='score' style='text-align:center' min="0" />
+
+                                        </div>
+
+                                        <div class="time">
+
+                                            <img src="./images/classificados.svg" alt="2° do Grupo B" class="home-a" id="away" />
+                                            <select class="classificados" id="oa" onchange="changeFlags(event)">
+                                                <option value="ING">ING</option>
+                                                <option value="IRA">IRA</option>
+                                                <option value="EUA">EUA</option>
+                                                <option value="GAL">GAL</option>
+                                                <option selected >2° B</option>
+                                            </select>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="container">
+
+                                    <p class="j-1">03/12 16hrs - O2<br> Ahmad bin Ali</p>
+
+                                    <div class="placar">
+                                        <div class="time">
+
+                                            <img src="./images/classificados.svg" alt="1° do Grupo C" id="homeo2" />
+                                            <select name="" id="oh2" onchange="changeFlags(event)" class="classificados">
+                                                <option value="ARG">ARG</option>
+                                                <option value="MEX">MEX</option>
+                                                <option value="POL">POL</option>
+                                                <option value="ARA">ARA</option>
+                                                <option selected >1° C</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="allScore">
+                                            <input type="number" id="score71" name="" class='score' style='text-align:center' min="0" />
+                                            <input type="number" id="score72" name="" class='score' style='text-align:center' min="0" />
+                                        </div>
+
+                                        <div class="time">
+
+                                            <img src="./images/classificados.svg" alt="2° do Grupo D" id="awayo2" />
+                                            <select class="classificados" id="oa2" onchange="changeFlags(event)">
+                                                <option value="AUS">AUS</option>
+                                                <option value="DIN">DIN</option>
+                                                <option value="FRA">FRA</option>
+                                                <option value="TUN">TUN</option>
+                                                <option selected>2° D</option>
+                                            </select>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="eliminacao">
+                            <div class="confrontos">
+                                <div class="container">
+
+                                    <p class="j-1">05/12 12hrs - O3<br> Al Janoub</p>
+
+                                    <div class="placar">
+                                        <div class="time">
+
+                                            <img src="./images/classificados.svg" alt="1° do Grupo E" id="homeo3" class="home-a" />
+                                            <select id="oh3" name="" onchange="changeFlags(event)"  class="classificados">
+                                                <option>CRC</option>
+                                                <option>ALE</option>
+                                                <option>JAP</option>
+                                                <option>ESP</option>
+                                                <option selected>1° E</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="allScore">
+                                            <input type="number" id="score73" name="" class='score' style='text-align:center' min="0" />
+                                            <input type="number" id="score74" name="" class='score' style='text-align:center' min="0" />
+                                        </div>
+
+                                        <div class="time">
+
+                                            <img src="./images/classificados.svg" alt="2° do Grupo F" id="awayo3" class="home-a" />
+                                            <select id="oa3" onchange="changeFlags(event)" class="classificados">
+                                                <option>BEL</option>
+                                                <option>CAN</option>
+                                                <option>CRO</option>
+                                                <option>MAR</option>
+                                                <option selected>2° F</option>
+                                            </select>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="container">
+
+                                    <p class="j-1">05/12 16hrs - O4<br> Stadium 974</p>
+
+                                    <div class="placar">
+                                        <div class="time">
+
+                                            <img src="./images/classificados.svg" alt="1° do Grupo G" id="homeo4" class="home-a" />
+                                            <select  name="" onchange="changeFlags(event)" id="oh4" class="classificados">
+                                                <option>BRA</option>
+                                                <option>CAM</option>
+                                                <option>SER</option>
+                                                <option>SUI</option>
+                                                <option  selected>1° G</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="allScore">
+                                            <input type="number" id="score75" name="" class='score' style='text-align:center' min="0" />
+                                            <input type="number" id="score76" name="" class='score' style='text-align:center' min="0" />
+                                        </div>
+
+                                        <div class="time">
+
+                                            <img src="./images/classificados.svg"  alt="2° do Grupo H" id="awayo4" class="home-a" />
+                                            <select id="oa4" onchange="changeFlags(event)" class="classificados">
+                                                <option>GAN</option>
+                                                <option>COR</option>
+                                                <option>POR</option>
+                                                <option>URU</option>
+                                                <option selected>2° H</option>
+                                            </select>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="eliminacao">
+                            <div class="confrontos">
+                                <div class="container">
+
+                                    <p class="j-1">04/12 16hrs - O5<br> Al Bayt Stadium</p>
+
+                                    <div class="placar">
+                                        <div class="time">
+
+                                            <img src="./images/classificados.svg" alt="1° do Grupo B" id="homeo5" class="home-a" />
+                                            <select name="" onchange="changeFlags2(event)" id="oh5" class="classificados">
+                                                <option>ING</option>
+                                                <option>IRA</option>
+                                                <option>EUA</option>
+                                                <option>GAL</option>
+                                                <option selected>1° B</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="allScore">
+                                            <input type="number" id="score77" name="" class='score' style='text-align:center' min="0" />
+                                            <input type="number" id="score78" name="" class='score' style='text-align:center' min="0" />
+                                        </div>
+
+                                        <div class="time">
+
+                                            <img src="./images/classificados.svg" alt="2° do Grupo A" id="awayo5" class="home-a" />
+                                            <select id="oa5" onchange="changeFlags2(event)" class="classificados">
+                                                <option>EQU</option>
+                                                <option>HOL</option>
+                                                <option>QAT</option>
+                                                <option>SEN</option>
+                                                <option selected>2° A</option>
+                                            </select>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="container">
+
+                                    <p class="j-1">04/12 12hrs - O6<br> Al Thumama</p>
+
+                                    <div class="placar">
+                                        <div class="time">
+
+                                            <img src="./images/classificados.svg" alt="1° do Grupo D" id="homeo6" class="home-a" />
+                                            <select name="" onchange="changeFlags2(event)" id="oh6" class="classificados">
+                                                <option>AUS</option>
+                                                <option>DIN</option>
+                                                <option>FRA</option>
+                                                <option>TUN</option>
+                                                <option selected>1° D</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="allScore">
+                                            <input type="number" id="score79" name="" class='score' style='text-align:center' min="0" />
+                                            <input type="number" id="score80" name="" class='score' style='text-align:center' min="0" />
+                                        </div>
+
+                                        <div class="time">
+
+                                            <img src="./images/classificados.svg" alt="2° do Grupo C" id="awayo6" class="home-a" />
+                                            <select id="oa6" onchange="changeFlags2(event)" class="classificados">
+                                                <option>ARG</option>
+                                                <option>MEX</option>
+                                                <option>POL</option>
+                                                <option>ARA</option>
+                                                <option selected>2° C</option>
+                                            </select>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="eliminacao">
+                            <div class="confrontos">
+                                <div class="container">
+
+                                    <p class="j-1">06/12 12hrs - O7<br> Education City</p>
+
+                                    <div class="placar">
+                                        <div class="time">
+
+                                            <img src="./images/classificados.svg" alt="1° do Grupo F" id="homeo7" class="home-a" />
+                                            <select name="" onchange="changeFlags2(event)" id="oh7" class="classificados">
+                                                <option>BEL</option>
+                                                <option>CAN</option>
+                                                <option>CRO</option>
+                                                <option>MAR</option>
+                                                <option selected>1° F</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="allScore">
+                                            <input type="number" id="score81" name="" class='score' style='text-align:center' min="0" />
+                                            <input type="number" id="score82" name="" class='score' style='text-align:center' min="0" />
+
+                                        </div>
+
+                                        <div class="time">
+
+                                            <img src="./images/classificados.svg" alt="2° do Grupo E" id="awayo7" class="home-a" />
+                                            <select id="oa7" onchange="changeFlags2(event)" class="classificados">
+                                                <option>CRC</option>
+                                                <option>ALE</option>
+                                                <option>JAP</option>
+                                                <option>ESP</option>
+                                                <option selected>2° E</option>
+                                            </select>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="container">
+
+                                    <p class="j-1">06/12 12hrs - O8<br> Lusail Stadium</p>
+
+                                    <div class="placar">
+                                        <div class="time">
+
+                                            <img src="./images/classificados.svg" alt="1° do Grupo H" id="homeo8" class="home-a" />
+                                            <select name="" onchange="changeFlags2(event)" id="oh8" class="classificados">
+                                                <option>GAN</option>
+                                                <option>COR</option>
+                                                <option>POR</option>
+                                                <option>URU</option>
+                                                <option  selected>1° H</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="allScore">
+                                            <input type="number" id="score83" name="" class='score' style='text-align:center' min="0" />
+                                            <input type="number" id="score84" name="" class='score' style='text-align:center' min="0" />
+                                        </div>
+
+                                        <div class="time">
+
+                                            <img src="./images/classificados.svg" alt="2° do Grupo G" id="awayo8" class="home-a" />
+                                            <select id="oa8" onchange="changeFlags2(event)" class="classificados">
+                                                <option>BRA</option>
+                                                <option>CAM</option>
+                                                <option>SER</option>
+                                                <option>SUI</option>
+                                                <option selected>2° G</option>
+                                            </select>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="fase-final">
+                    <p class="j-3">QUARTAS DE FINAL</p>
+                    <div class="quartas">
+                        <div class="container">
+
+                            <p class="j-1">09/12 16hrs - Q1<br> Lusail Stadium</p>
+
+                            <div class="placar">
+                                <div class="time">
+
+                                    <img src="./images/classificados.svg" alt="Vencedor Oitavas 1" id="homeq1" class="home-a" />
+                                    <select name="" onchange="changeQuartas(event)" id="hq1" class="classificados">
+                                        <option value="HOL">HOL</option>
+                                        <option value="EUA">EUA</option>
+                                        <option selected >V O1</option>
+                                    </select>
+                                </div>
+
+                                <div class="allScore">
+                                    <input type="number" id="score85" name="" class='score' style='text-align:center' min="0" />
+                                    <input type="number" id="score86" name="" class='score' style='text-align:center' min="0" />
+                                </div>
+
+                                <div class="time">
+
+                                    <img src="./images/classificados.svg" alt="Vencedor Oitavas 2" id="awayq1" class="home-a" />
+                                    <select onchange="changeQuartas(event)" id="aq1" class="classificados">
+                                        <option>ARG</option>
+                                        <option>AUS</option>
+                                        <option selected >V O2</option>
+                                    </select>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="container">
+
+                            <p class="j-1">09/12 12hrs - Q2<br> Education City</p>
+
+                            <div class="placar">
+                                <div class="time">
+
+                                    <img src="./images/classificados.svg" alt="Vencedor Oitavas 3" id="homeq2" class="home-a" />
+                                    <select name="" onchange="changeQuartas(event)" id="hq2" class="classificados">
+                                        <option>CRO</option>
+                                        <option>JAP</option>
+                                        <option selected >V O3</option>
+                                    </select>
+                                </div>
+
+                                <div class="allScore">
+                                    <input type="number" id="score87" name="" class='score' style='text-align:center' min="0" />
+                                    <input type="number" id="score88" name="" class='score' style='text-align:center' min="0" />
+                                </div>
+
+                                <div class="time">
+
+                                    <img src="./images/classificados.svg" alt="Vencedor das Oitavas 4" id="awayq2" class="home-a" />
+                                    <select onchange="changeQuartas(event)" id="aq2" class="classificados">
+                                        <option>BRA</option>
+                                        <option>COR</option>
+                                        <option selected >V O4</option>
+                                    </select>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="container">
+
+                            <p class="j-1">10/12 16hrs - Q3<br> Al Bayt</p>
+
+                            <div class="placar">
+                                <div class="time">
+
+                                    <img src="./images/classificados.svg" alt="Vencedor Oitavas 5" id="homeq3" class="home-a" />
+                                    <select name="" onchange="changeQuartas2(event)" id="hq3" class="classificados">
+                                        <option>ING</option>
+                                        <option>SEN</option>
+                                        <option selected >V O5</option>
+                                    </select>
+                                </div>
+
+                                <div class="allScore">
+                                    <input type="number" id="score89" name="" class='score' style='text-align:center' min="0" />
+                                    <input type="number" id="score90" name="" class='score' style='text-align:center' min="0" />
+                                </div>
+
+                                <div class="time">
+
+                                    <img src="./images/classificados.svg" alt="Vencedor Oitavas 6" id="awayq3" class="home-a" />
+                                    <select onchange="changeQuartas2(event)" id="aq3" class="classificados">
+                                        <option>FRA</option>
+                                        <option>POL</option>
+                                        <option selected >V O6</option>
+                                    </select>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="container">
+
+                            <p class="j-1">10/12 12hrs - Q4<br> Al Thumama</p>
+
+                            <div class="placar">
+                                <div class="time">
+
+                                    <img src="./images/classificados.svg" alt="Vencedor Oitavas 7" id="homeq4" class="home-a" />
+                                    <select name="" onchange="changeQuartas2(event)" id="hq4" class="classificados">
+                                        <option>MAR</option>
+                                        <option>ESP</option>
+                                        <option selected >V O7</option>
+                                    </select>
+                                </div>
+
+                                <div class="allScore">
+                                    <input type="number" id="score91" name="" class='score' style='text-align:center' min="0" />
+                                    <input type="number" id="score92" name="" class='score' style='text-align:center' min="0" />
+                                </div>
+
+                                <div class="time">
+
+                                    <img src="./images/classificados.svg" alt="Vencedor Oitavas 8" id="awayq4" class="home-a" />
+                                    <select onchange="changeQuartas2(event)" id="aq4" class="classificados">
+                                        <option>SUI</option>
+                                        <option>POR</option>
+                                        <option selected >V O8</option>
+                                    </select>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fase-final">
+                    <p class="j-3">SEMI FINAIS</p>
+                    <div class="semi">
+                        <div class="container">
+
+                            <p class="j-1">13/12 16hrs - S1<br> Lusail Stadium</p>
+
+                            <div class="placar">
+                                <div class="time">
+
+                                    <img src="./images/classificados.svg" alt="Vencedor Quartas 1" id="homes1" class="home-a" />
+                                    <select  onchange="changeSemi1(event)" name="" id="hs1" class="classificados">
+                                        <option>HOL</option>
+                                        <option>EUA</option>
+                                        <option>ARG</option>
+                                        <option>AUS</option>
+                                        <option selected >V Q1</option>
+                                    </select>
+                                </div>
+
+                                <div class="allScore">
+                                    <input type="number" id="score93" name="" class='score' style='text-align:center' min="0" />
+                                    <input type="number" id="score94" name="" class='score' style='text-align:center' min="0" />
+                                </div>
+
+                                <div class="time">
+
+                                    <img src="./images/classificados.svg" alt="Vencedor Quartas 2" id="aways1" class="home-a" />
+                                    <select onchange="changeSemi1(event)" id="as1" class="classificados">
+                                        <option>JAP</option>
+                                        <option>CRO</option>
+                                        <option>BRA</option>
+                                        <option>COR</option>
+                                        <option selected >V Q2</option>
+                                    </select>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="container">
+
+                            <p class="j-1">14/12 12hrs - S2<br> Al Bayt</p>
+
+                            <div class="placar">
+                                <div class="time">
+
+                                    <img src="./images/classificados.svg" alt="Vencedor Quartas 3" id="homes2" class="home-a" />
+                                    <select onchange="changeSemi2(event)" name="" id="hs2" class="classificados">
+                                        <option>ING</option>
+                                        <option>SEN</option>
+                                        <option>FRA</option>
+                                        <option>POL</option>
+                                        <option selected >V Q3</option>
+                                    </select>
+                                </div>
+
+                                <div class="allScore">
+                                    <input type="number" id="score95" name="" class='score' style='text-align:center' min="0" />
+                                    <input type="number" id="score96" name="" class='score' style='text-align:center' min="0" />
+                                </div>
+
+                                <div class="time">
+
+                                    <img src="./images/classificados.svg" alt="Vencedor Quartas 4" id="aways2" class="home-a" />
+                                    <select onchange="changeSemi2(event)" id="as2" class="classificados">
+                                        <option>MAR</option>
+                                        <option>ESP</option>
+                                        <option>SUI</option>
+                                        <option>POR</option>
+                                        <option selected >V Q4</option>
+                                    </select>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fase-final">
+                    <p class="j-3">TERCEIRO E QUARTO LUGARES</p>
+                    <div class="terceirolugar">
+                        <div class="container">
+
+                            <p class="j-1">17/12 12hrs <br> Khalifa Stadium</p>
+
+                            <div class="placar">
+                                <div class="time">
+
+                                    <img src="./images/classificados.svg" alt="Perdedor Semi 1" id="homep1" class="home-a" />
+                                    <select onchange="change3LugarHome(event)" name="" id="ps1" class="classificados">
+                                        <option>HOL</option>
+                                        <option>EUA</option>
+                                        <option>ARG</option>
+                                        <option>AUS</option>
+                                        <option>JAP</option>
+                                        <option>CRO</option>
+                                        <option>BRA</option>
+                                        <option>COR</option>
+                                        <option selected >P S1</option>
+                                    </select>
+                                </div>
+
+                                <div class="allScore">
+                                    <input type="number" id="score97" name="" class='score' style='text-align:center' min="0" />
+                                    <input type="number" id="score98" name="" class='score' style='text-align:center' min="0" />
+                                </div>
+
+                                <div class="time">
+
+                                    <img src="./images/classificados.svg" alt="Perdedor Semi 2" id="awayp1" class="home-a" />
+                                    <select onchange="change3LugarAway(event)" id="ps2" class="classificados">
+                                        <option>SEN</option>
+                                        <option>ING</option>
+                                        <option>POL</option>
+                                        <option>FRA</option>
+                                        <option>ESP</option>
+                                        <option>MAR</option>
+                                        <option>SUI</option>
+                                        <option>POR</option>
+                                        <option selected >P S2</option>
+                                    </select>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="fase-final">
+                    <p class="j-3">FINAL</p>
+                    <div class="final">
+                        <div class="container">
+
+                            <p class="j-1">18/12 12hrs - O7<br> Lusail Stadium</p>
+
+                            <div class="placar">
+                                <div class="time">
+
+                                    <img src="./images/classificados.svg" alt="Vencedor Semi 1" id="homefinal" class="home-a" />
+                                    <select onchange="changeFinalHome(event)" name="" id="hf" class="classificados">
+                                        <option>HOL</option>
+                                        <option>EUA</option>
+                                        <option>ARG</option>
+                                        <option>AUS</option>
+                                        <option>JAP</option>
+                                        <option>CRO</option>
+                                        <option>BRA</option>
+                                        <option>COR</option>
+                                        <option selected >V S1</option>
+                                    </select>
+                                </div>
+
+                                <div class="allScore">
+                                    <input type="number" id="score99" name="" class='score' style='text-align:center' min="0" />
+                                    <input type="number" id="score100" name="" class='score' style='text-align:center' min="0" />
+                                </div>
+
+                                <div class="time">
+
+                                    <img src="./images/classificados.svg" alt="Vencedor Semi 2" id="awayfinal" class="home-a" />
+                                    <select onchange="changeFinalAway(event)" id="af" class="classificados">
+                                        <option>SEN</option>
+                                        <option>ING</option>
+                                        <option>POL</option>
+                                        <option>FRA</option>
+                                        <option>ESP</option>
+                                        <option>MAR</option>
+                                        <option>SUI</option>
+                                        <option>POR</option>
+                                        <option selected >V S2</option>
+                                    </select>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                    
+                    <div class="lstorage">
+                        <button onclick="addScore(event)" id="save" value="input">Salvar Placares</button>
+                        <button onclick="loadScore(event); loadFlags(event)" id="load" value="input">Carregar Placares</button>
+                    </div>
+                </div>
+                
+            </section>
+            <section class="efgh">
+                <section class="all-groups">
+
+                    <div class="grupo">
+                        <p class="j-2">GRUPO E</p>
+                        <div class="container">
+
+                            <p class="j-1">23/11 10:00hrs <br> Khalifa Stadium</p>
+
+                            <div class="placar">
+                                <div class="time">
+                                    <img src="./images/icon-germany.svg" alt="Alemanha" class="home-a" />
+                                    <p class="j-1">ALE</p>
+                                </div>
+
+                                <div class="allScore">
+                                    <input type="number" id="score113" name="" class='score j-place' style='text-align:center' min="0" />
+                                    <input type="number" id="score114" name="" class='score j-place' style='text-align:center' min="0" />
+                                </div>
+
+                                <div class="time">
+                                    <img src="./images/icon-japan.svg" alt="Japão" class="home-a" />
+                                    <p class="j-1">JAP</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="container">
+
+                            <p class="j-1">23/11 10:00hrs <br>Al Thumama</p>
+
+                            <div class="placar">
+                                <div class="time">
+                                    <img src="./images/icon-spain.svg" alt="Espanha" class="home-a" />
+                                    <p class="j-1">ESP</p>
+                                </div>
+
+                                <div class="allScore">
+                                    <input type="number" id="score115" name="" class='score j-place' style='text-align:center' min="0" />
+                                    <input type="number" id="score116" name="" class='score j-place' style='text-align:center' min="0" />
+                                </div>
+
+                                <div class="time">
+                                    <img src="./images/icon-costa-rica.svg" alt="Costa Rica" class="home-a" />
+                                    <p class="j-1">CRC</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="container">
+
+                            <p class="j-1">27/11 07:00hrs <br> Ahmad bin Ali</p>
+
+                            <div class="placar">
+                                <div class="time">
+                                    <img src="./images/icon-japan.svg" alt="Japão" class="home-a" />
+                                    <p class="j-1">JAP</p>
+                                </div>
+
+                                <div class="allScore">
+                                    <input type="number" id="score37" name="" class='score' style='text-align:center' min="0" />
+                                    <input type="number" id="score38" name="" class='score' style='text-align:center' min="0" />
+                                </div>
+
+                                <div class="time">
+                                    <img src="./images/icon-costa-rica.svg" alt="Costa Rica" class="home-a" />
+                                    <p class="j-1">CRC</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="container">
+
+                            <p class="j-1">27/11 16:00hrs <br>Al Bayt</p>
+
+                            <div class="placar">
+                                <div class="time">
+                                    <img src="./images/icon-spain.svg" alt="Espanha" class="home-a" />
+                                    <p class="j-1">ESP</p>
+                                </div>
+
+                                <div class="allScore">
+                                    <input type="number" id="score39" name="" class='score' style='text-align:center' min="0" />
+                                    <input type="number" id="score40" name="" class='score' style='text-align:center' min="0" />
+                                </div>
+
+                                <div class="time">
+                                    <img src="./images/icon-germany.svg" alt="Alemanha" class="home-a" />
+                                    <p class="j-1">ALE</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="container">
+
+                            <p class="j-1">01/12 16:00hrs <br>Khalifa Stadium</p>
+
+                            <div class="placar">
+                                <div class="time">
+                                    <img src="./images/icon-japan.svg" alt="Japão" class="home-a" />
+                                    <p class="j-1">JAP</p>
+                                </div>
+
+                                <div class="allScore">
+                                    <input type="number" id="score41" name="" class='score' style='text-align:center' min="0" />
+                                    <input type="number" id="score42" name="" class='score' style='text-align:center' min="0" />
+                                </div>
+
+                                <div class="time">
+                                    <img src="./images/icon-spain.svg" alt="Espanha" class="home-a" />
+                                    <p class="j-1">ESP</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="container">
+
+                            <p class="j-1">01/12 16:00hrs <br>Al Bayt</p>
+
+                            <div class="placar">
+                                <div class="time">
+                                    <img src="./images/icon-costa-rica.svg" alt="Costa Rica" class="home-a" />
+                                    <p class="j-1">CRC</p>
+                                </div>
+
+                                <div class="allScore">
+                                    <input type="number" id="score43" name="" class='score' style='text-align:center' min="0" />
+                                    <input type="number" id="score44" name="" class='score' style='text-align:center' min="0" />
+                                </div>
+
+                                <div class="time">
+                                    <img src="./images/icon-germany.svg" alt="Alemanha" class="home-a" />
+                                    <p class="j-1">ALE</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grupo">
+                        <p class="j-2">GRUPO F</p>
+                        <div class="container">
+
+                            <p class="j-1">23/11 07:00hrs <br>Al Bayt</p>
+
+                            <div class="placar">
+                                <div class="time">
+                                    <img src="./images/icon-morocco.svg" alt="Marrocos" class="home-a" />
+                                    <p class="j-1">MAR</p>
+                                </div>
+
+                                <div class="allScore">
+                                    <input type="number" id="score121" name="" class='score j-place' style='text-align:center' min="0" />
+                                    <input type="number" id="score122" name="" class='score j-place' style='text-align:center' min="0" />
+                                </div>
+
+                                <div class="time">
+                                    <img src="./images/icon-croatia.svg" alt="Croácia" class="home-a" />
+                                    <p class="j-1">CRO</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="container">
+
+                            <p class="j-1">23/11 16:00hrs <br> Ahmad bin Ali</p>
+
+                            <div class="placar">
+                                <div class="time">
+                                    <img src="./images/icon-belgium.svg" alt="Bélgica" class="home-a" />
+                                    <p class="j-1">BEL</p>
+                                </div>
+
+                                <div class="allScore">
+                                    <input type="number" id="score123" name="" class='score j-place' style='text-align:center' min="0" />
+                                    <input type="number" id="score124" name="" class='score j-place' style='text-align:center' min="0" />
+                                </div>
+
+                                <div class="time">
+                                    <img src="./images/icon-canada.svg" alt="Canadá" class="home-a" />
+                                    <p class="j-1">CAN</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="container">
+
+                            <p class="j-1">27/11 10:00hrs <br>Al Thumama</p>
+
+                            <div class="placar">
+                                <div class="time">
+                                    <img src="./images/icon-belgium.svg" alt="Bélgica" class="home-a" />
+                                    <p class="j-1">BEL</p>
+                                </div>
+
+                                <div class="allScore">
+                                    <input type="number" id="score45" name="" class='score' style='text-align:center' min="0" />
+                                    <input type="number" id="score46" name="" class='score' style='text-align:center' min="0" />
+                                </div>
+
+                                <div class="time">
+                                    <img src="./images/icon-morocco.svg" alt="Marrocos" class="home-a" />
+                                    <p class="j-1">MAR</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="container">
+
+                            <p class="j-1">27/11 13:00hrs <br>Khalifa Stadium</p>
+
+                            <div class="placar">
+                                <div class="time">
+                                    <img src="./images/icon-croatia.svg" alt="Croácia" class="home-a" />
+                                    <p class="j-1">CRO</p>
+                                </div>
+
+                                <div class="allScore">
+                                    <input type="number" id="score47" name="" class='score' style='text-align:center' min="0" />
+                                    <input type="number" id="score48" name="" class='score' style='text-align:center' min="0" />
+                                </div>
+
+                                <div class="time">
+                                    <img src="./images/icon-canada.svg" alt="Canadá" class="home-a" />
+                                    <p class="j-1">CAN</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="container">
+
+                            <p class="j-1">01/12 12:00hrs <br>Ahmad bin Ali</p>
+
+                            <div class="placar">
+                                <div class="time">
+                                    <img src="./images/icon-croatia.svg" alt="Croácia" class="home-a" />
+                                    <p class="j-1">CRO</p>
+                                </div>
+
+                                <div class="allScore">
+                                    <input type="number" id="score49" name="" class='score' style='text-align:center' min="0" />
+                                    <input type="number" id="score50" name="" class='score' style='text-align:center' min="0" />
+                                </div>
+
+                                <div class="time">
+                                    <img src="./images/icon-belgium.svg" alt="Bélgica" class="home-a" />
+                                    <p class="j-1">BEL</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="container">
+
+                            <p class="j-1">01/12 12:00hrs <br>AL Thumama</p>
+
+                            <div class="placar">
+                                <div class="time">
+                                    <img src="./images/icon-canada.svg" alt="Canadá" class="home-a" />
+                                    <p class="j-1">CAN</p>
+                                </div>
+
+                                <div class="allScore">
+                                    <input type="number" id="score51" name="" class='score' style='text-align:center' min="0" />
+                                    <input type="number" id="score52" name="" class='score' style='text-align:center' min="0" />
+                                </div>
+
+                                <div class="time">
+                                    <img src="./images/icon-morocco.svg" alt="Marrocos" class="home-a" />
+                                    <p class="j-1">MAR</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="all-groups">
+
+                    <div class="grupo">
+                        <p class="j-2">GRUPO G</p>
+                        <div class="container">
+
+                            <p class="j-1">24/11 07:00hrs <br>Al Janoub</p>
+
+                            <div class="placar">
+                                <div class="time">
+                                    <img src="./images/icon-switzerland.svg" alt="Suiça" class="home-a" />
+                                    <p class="j-1">SUI</p>
+                                </div>
+
+                                <div class="allScore">
+                                    <input type="number" id="score125" name="" class='score j-place' style='text-align:center' min="0" />
+                                    <input type="number" id="score126" name="" class='score j-place' style='text-align:center' min="0" />
+                                </div>
+
+                                <div class="time">
+                                    <img src="./images/icon-cameroon.svg" alt="Camarões" class="home-a" />
+                                    <p class="j-1">CAM</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="container">
+
+                            <p class="j-br">24/11 16:00hrs <br>Lusail Stadium</p>
+
+                            <div class="placar-br">
+                                <div class="time">
+                                    <img src="./images/icon-brazil.svg" alt="Brasil" class="home-a" />
+                                    <p class="j-br">BRA</p>
+                                </div>
+
+                                <div class="allScore">
+                                    <input type="number" name="" id="score3" class='score' style='text-align:center' min="0" />
+                                    <input type="number" name="" id="score4" class='score' style='text-align:center' min="0" />
+                                </div>
+
+                                <div class="time">
+                                    <img src="./images/icon-serbia.svg" alt="Sérvia" class="home-a" />
+                                    <p class="j-br">SER</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="container">
+
+                            <p class="j-1">28/11 07:00hrs <br>Al Janoub</p>
+
+                            <div class="placar">
+                                <div class="time">
+                                    <img src="./images/icon-cameroon.svg" alt="Camarões" class="home-a" />
+                                    <p class="j-1">CAM</p>
+                                </div>
+
+                                <div class="allScore">
+                                    <input type="number" id="score53" name="" class='score' style='text-align:center' min="0" />
+                                    <input type="number" id="score54" name="" class='score' style='text-align:center' min="0" />
+                                </div>
+
+                                <div class="time">
+                                    <img src="./images/icon-serbia.svg" alt="Sérvia" class="home-a" />
+                                    <p class="j-1">SER</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="container">
+
+                            <p class="j-br">28/11 13:00hrs <br>Stadium 974</p>
+
+                            <div class="placar-br">
+                                <div class="time">
+                                    <img src="./images/icon-brazil.svg" alt="Brasil" class="home-a" />
+                                    <p class="j-br">BRA</p>
+                                </div>
+
+                                <div class="allScore">
+                                    <input type="number" id="score55" name="" class='score' style='text-align:center' min="0" />
+                                    <input type="number" id="score56" name="" class='score' style='text-align:center' min="0" />
+                                </div>
+
+                                <div class="time">
+                                    <img src="./images/icon-switzerland.svg" alt="Suiça" class="home-a" />
+                                    <p class="j-br">SUI</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="container">
+
+                            <p class="j-1">02/12 16:00hrs <br>Stadium 974</p>
+
+                            <div class="placar">
+                                <div class="time">
+                                    <img src="./images/icon-serbia.svg" alt="Sérvia" class="home-a" />
+                                    <p class="j-1">SER</p>
+                                </div>
+
+                                <div class="allScore">
+                                    <input type="number" id="score57" name="" class='score' style='text-align:center' min="0" />
+                                    <input type="number" id="score58" name="" class='score' style='text-align:center' min="0" />
+                                </div>
+
+                                <div class="time">
+                                    <img src="./images/icon-switzerland.svg" alt="Suiça" class="home-a" />
+                                    <p class="j-1">SUI</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="container">
+
+                            <p class="j-br">02/12 16:00hrs <br>Lusail Stadium</p>
+
+                            <div class="placar-br">
+                                <div class="time">
+                                    <img src="./images/icon-cameroon.svg" alt="Camarões" class="home-a" />
+                                    <p class="j-br">CAM</p>
+                                </div>
+
+                                <div class="allScore">
+                                    <input type="number" id="score59" name="" class='score' style='text-align:center' min="0" />
+                                    <input type="number" id="score60" name="" class='score' style='text-align:center' min="0" />
+                                </div>
+
+                                <div class="time">
+                                    <img src="./images/icon-brazil.svg" alt="Brasil" class="home-a" />
+                                    <p class="j-br">BRA</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grupo">
+                        <p class="j-2">GRUPO H</p>
+                        <div class="container">
+
+                            <p class="j-1">24/11 10:00hrs <br>Education City</p>
+
+                            <div class="placar">
+                                <div class="time">
+                                    <img src="./images/icon-uruguay.svg" alt="Uruguai" class="home-a" />
+                                    <p class="j-1">URU</p>
+                                </div>
+
+                                <div class="allScore">
+                                    <input type="number" id="score127" name="" class='score j-place' style='text-align:center' min="0" />
+                                    <input type="number" id="score128" name="" class='score j-place' style='text-align:center' min="0" />
+                                </div>
+
+                                <div class="time">
+                                    <img src="./images/icon-south-korea.svg" alt="Coréia do Sul" class="home-a" />
+                                    <p class="j-1">COR</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="container">
+
+                            <p class="j-1">24/11 13:00hrs <br>Stadium 974</p>
+
+                            <div class="placar">
+                                <div class="time">
+                                    <img src="./images/icon-portugal.svg" alt="Portugal" class="home-a" />
+                                    <p class="j-1">POR</p>
+                                </div>
+
+                                <div class="allScore">
+                                    <input type="number" name="" id="score1" class='score' style='text-align:center' min="0" />
+                                    <input type="number" name="" id="score2" class='score' style='text-align:center' min="0" />
+                                </div>
+
+                                <div class="time">
+                                    <img src="./images/icon-ghana.svg" alt="Gana" class="home-a" />
+                                    <p class="j-1">GAN</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="container">
+
+                            <p class="j-1">28/11 10:00hrs <br>Education City</p>
+
+                            <div class="placar">
+                                <div class="time">
+                                    <img src="./images/icon-south-korea.svg" alt="Coréia do Sul" class="home-a" />
+                                    <p class="j-1">COR</p>
+                                </div>
+
+                                <div class="allScore">
+                                    <input type="number" id="score61" name="" class='score' style='text-align:center' min="0" />
+                                    <input type="number" id="score62" name="" class='score' style='text-align:center' min="0" />
+                                </div>
+
+                                <div class="time">
+                                    <img src="./images/icon-ghana.svg" alt="Gana" class="home-a" />
+                                    <p class="j-1">GAN</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="container">
+
+                            <p class="j-1">28/11 16:00hrs <br> Lusail Stadium</p>
+
+                            <div class="placar">
+                                <div class="time">
+                                    <img src="./images/icon-portugal.svg" alt="Portugal" class="home-a" />
+                                    <p class="j-1">POR</p>
+                                </div>
+
+                                <div class="allScore">
+                                    <input type="number" id="score63" name="" class='score' style='text-align:center' min="0" />
+                                    <input type="number" id="score64" name="" class='score' style='text-align:center' min="0" />
+                                </div>
+
+                                <div class="time">
+                                    <img src="./images/icon-uruguay.svg" alt="Uruguai" class="home-a" />
+                                    <p class="j-1">URU</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="container">
+
+                            <p class="j-1">02/12 12:00hrs <br>Education City</p>
+
+                            <div class="placar">
+                                <div class="time">
+                                    <img src="./images/icon-south-korea.svg" alt="Coréia do Sul" class="home-a" />
+                                    <p class="j-1">COR</p>
+                                </div>
+
+                                <div class="allScore">
+                                    <input type="number" id="score65" name="" class='score' style='text-align:center' min="0" />
+                                    <input type="number" id="score66" name="" class='score' style='text-align:center' min="0" />
+                                </div>
+
+                                <div class="time">
+                                    <img src="./images/icon-portugal.svg" alt="Portugal" class="home-a" />
+                                    <p class="j-1">POR</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="container">
+
+                            <p class="j-1">02/12 12:00hrs <br>Al Janoub</p>
+
+                            <div class="placar">
+                                <div class="time">
+                                    <img src="./images/icon-ghana.svg" alt="Gana" class="home-a" />
+                                    <p class="j-1">GAN</p>
+                                </div>
+
+                                <div class="allScore">
+                                    <input type="number" id="score67" name="" class='score' style='text-align:center' min="0" />
+                                    <input type="number" id="score68" name="" class='score' style='text-align:center' min="0" />
+                                </div>
+
+                                <div class="time">
+                                    <img src="./images/icon-uruguay.svg" alt="Uruguai" class="home-a" />
+                                    <p class="j-1">URU</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </div>
+
+
+    </main>
+
+</body>
+
+
+</html>''
