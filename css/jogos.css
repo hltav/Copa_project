@@ -241,6 +241,9 @@ body {
     margin-top: 2%;
 
 }
+#score74, #score81, #score86, #score87, #score99 {
+    font-weight: bold;
+} 
 
 .lstorage {
     display: inline-block;
